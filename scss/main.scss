@@ -10,23 +10,19 @@ body {
   font-family: $primary-font-family;
   color: $text-color;
   text-decoration: none;
-  min-height: 100vh;
-
-  display: flex;
-  flex-direction: column;
-
   text-align: center;
-  align-items: center;
+  min-height: 100vh;
+  margin: 0 auto;
 }
 
 main {
-  overflow: hidden;
   margin-top: 35px;
   padding: $global-padding;
-
+  overflow: hidden;
   line-height: 32px;
 
   h1 {
-    font-size: 5.5rem;
+    font-size: 6rem;
+    margin-bottom: 4rem;
   }
 }
