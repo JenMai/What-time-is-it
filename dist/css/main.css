@@ -5,23 +5,37 @@
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.9); }
 
+#clock-pin {
+  position: absolute;
+  top: 47%;
+  left: 42%;
+  width: 2rem;
+  height: 2rem;
+  border: 20px solid #0f1129;
+  border-radius: 50%;
+  z-index: 1; }
+
 #clock-base {
   width: 95%;
   height: 95%;
   transform: translateY(-0.5rem);
-  transform: translateX(0.7rem); }
+  transform: translateX(1.35rem); }
 
 .hand {
   width: 47%;
   height: 1rem;
   position: absolute;
-  top: 50%; }
+  top: 50%;
+  transform-origin: 100%;
+  transform: rotate(90deg); }
   .hand.hour {
-    background: #0634c9; }
+    background: #161b2c; }
   .hand.minute {
-    background: #0a42f8; }
+    background: #414f81;
+    z-index: -1; }
   .hand.second {
-    background: #6d8ffb; }
+    background: #5f71af;
+    z-index: -2; }
 
 * {
   box-sizing: border-box; }

@@ -7,11 +7,21 @@
   background-color: rgba(#fff, 0.9);
 }
 
+#clock-pin {
+  position: absolute;
+  top: 47%;
+  left: 42%;
+  width: 2rem;
+  height: 2rem;
+  border: 20px solid $clock-border-color;
+  border-radius: 50%;
+  z-index: 1;
+}
 #clock-base {
   width: 95%;
   height: 95%;
   transform: translateY(-0.5rem);
-  transform: translateX(0.7rem);
+  transform: translateX(1.35rem);
 }
 
 .hand {
@@ -20,15 +30,20 @@
   position: absolute;
   top: 50%;
 
+  transform-origin: 100%;
+  transform: rotate(90deg);
+
   &.hour {
     background: $clock-hand-color;
   }
 
   &.minute {
-    background: lighten($clock-hand-color, 10);
+    background: lighten($clock-hand-color, 25);
+    z-index: -1;
   }
 
   &.second {
-    background: lighten($clock-hand-color, 30);
+    background: lighten($clock-hand-color, 40);
+    z-index: -2;
   }
 }
