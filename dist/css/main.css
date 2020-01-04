@@ -1,0 +1,58 @@
+#clock {
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid #0f1129;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.9); }
+
+#clock-base {
+  width: 95%;
+  height: 95%;
+  transform: translateY(-0.5rem);
+  transform: translateX(0.7rem); }
+
+.hand {
+  width: 47%;
+  height: 1rem;
+  position: absolute;
+  top: 50%; }
+  .hand.hour {
+    background: #0634c9; }
+  .hand.minute {
+    background: #0a42f8; }
+  .hand.second {
+    background: #6d8ffb; }
+
+* {
+  box-sizing: border-box; }
+
+body {
+  font-family: "Oleo Script", cursive;
+  color: #fff;
+  text-decoration: none;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center; }
+  body.bg-image {
+    background-image: url("../img/pawel-nolbert-4u2U8EO9OzY-unsplash.jpg");
+    background-repeat: no-repeat;
+    background-size: cover; }
+    body.bg-image:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100%;
+      height: 105%;
+      background: rgba(0, 74, 179, 0.5);
+      z-index: -3; }
+
+main {
+  overflow: hidden;
+  margin-top: 35px;
+  padding: 3rem;
+  line-height: 32px; }
+  main h1 {
+    font-size: 5.5rem; }

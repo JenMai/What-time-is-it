@@ -1,0 +1,34 @@
+#clock {
+  width: 30rem;
+  height: 30rem;
+  border: 20px solid $clock-border-color;
+  border-radius: 50%;
+
+  background-color: rgba(#fff, 0.9);
+}
+
+#clock-base {
+  width: 95%;
+  height: 95%;
+  transform: translateY(-0.5rem);
+  transform: translateX(0.7rem);
+}
+
+.hand {
+  width: 47%;
+  height: 1rem;
+  position: absolute;
+  top: 50%;
+
+  &.hour {
+    background: $clock-hand-color;
+  }
+
+  &.minute {
+    background: lighten($clock-hand-color, 10);
+  }
+
+  &.second {
+    background: lighten($clock-hand-color, 30);
+  }
+}

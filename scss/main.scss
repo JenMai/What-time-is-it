@@ -1,0 +1,32 @@
+@import "config";
+@import "clock";
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  @include background;
+  font-family: $primary-font-family;
+  color: $text-color;
+  text-decoration: none;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+
+  text-align: center;
+  align-items: center;
+}
+
+main {
+  overflow: hidden;
+  margin-top: 35px;
+  padding: $global-padding;
+
+  line-height: 32px;
+
+  h1 {
+    font-size: 5.5rem;
+  }
+}
