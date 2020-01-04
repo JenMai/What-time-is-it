@@ -1,0 +1,14 @@
+{
+  "name": "whattimeisit",
+  "version": "1.0.0",
+  "description": "Small clock in CSS and JS",
+  "main": "index.js",
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css --recursive"
+  },
+  "author": "Jennifer Maillot",
+  "license": "ISC",
+  "dependencies": {
+    "node-sass": "^4.13.0"
+  }
+}
